@@ -65,7 +65,7 @@ if opts then
             score = score_bitcoinabuse,
             callback = check_bitcoinabuse
         })
-        rspamd_config:register_dependency(id, symbol_bitcoinaddr)
+        rspamd_config:register_dependency(symbol_bitcoinabuse, symbol_bitcoinaddr)
 
         rspamd_logger.infox('%s module is configured and loaded', N)
     else
